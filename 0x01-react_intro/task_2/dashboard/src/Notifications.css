@@ -1,0 +1,14 @@
+.Notifications {
+	border: 4px dotted var(--color--primary);
+	padding: 2rem;
+}
+
+li[data-priority='default'] {
+	color: blue;
+  }
+li[data-priority='urgent'] {
+	color: var(--color--primary);
+}
+:root {
+  --color--primary: #E10034;
+}
