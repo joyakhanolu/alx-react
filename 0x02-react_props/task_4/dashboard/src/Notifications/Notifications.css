@@ -1,0 +1,35 @@
+:root {
+  --color-blue: #0000ff;
+  --color-red: #ff0000;
+}
+
+.Notifications {
+  border: 2px dashed #E0434C;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  right: 0;
+}
+
+.menuItem {
+  text-align: right;
+  margin-right: .5rem;
+}
+/* button:focus {
+  outline: none;
+} */
+ul {
+  padding-right: 3rem;
+}
+
+li {
+  margin-left: 2.5rem;
+
+}
+ul li[data-notification-type='default'] {
+  color: var(--color-blue);
+}
+
+ul li[data-notification-type='urgent'] {
+  color: var(--color-red);
+}

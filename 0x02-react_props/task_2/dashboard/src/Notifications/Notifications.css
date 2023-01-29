@@ -1,0 +1,22 @@
+:root {
+    --color-blue: #0000ff;
+    --color-red: #ff0000;
+  }
+  
+  .Notifications {
+    border: 2px dashed #E0434C;
+    padding: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  li {
+    margin-left: 2.5rem;
+  }
+  
+  ul li[data-priority='default'] {
+    color: var(--color-blue);
+  }
+  
+  ul li[data-priority='urgent'] {
+    color: var(--color-red);
+  }
