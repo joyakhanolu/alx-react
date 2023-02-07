@@ -1,0 +1,46 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development --config config/webpack.config.js",
+    "test-watch": "jest --watch",
+    "build": "webpack --mode development --config config/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^8.0.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "dependencies": {
+    "inline-source-map": "^0.6.2",
+    "jest": "^27.3.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "web-vitals": "^2.1.2"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/config/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(png|svg|jpg|jpeg|gif)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "testEnvironment": "jsdom"
+  }
+}
